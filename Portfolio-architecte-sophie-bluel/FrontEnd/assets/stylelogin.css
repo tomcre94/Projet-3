@@ -1,0 +1,330 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+	background-color: white;
+}
+body {
+	line-height: 1;
+	max-width: 1440px;
+	margin: auto;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/** end reset css**/
+body {
+	font-family: 'Work Sans' ;
+	font-size: 14px;
+	background-color: rgba(255, 254, 248, 1);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 180px;
+	margin-left: 180px;
+	margin-top: 0;
+	padding-top: 50px;
+}
+
+header img {
+	width: 22px;
+  	height: 22px;
+}
+section {
+	margin: 50px 0
+}
+
+h1{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1 > span {
+	font-family: 'Work Sans';
+	font-size:10px;
+	letter-spacing: 0.1em;
+	margin-top: 5px;
+	font-weight: 400;
+}
+
+h2{
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: #1D6154
+}
+
+nav {
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+
+}
+nav li {
+	padding: 0 10px;
+	font-size: 14px;
+	font-weight:300;
+}
+
+nav ul li:nth-child(3) {
+	font-weight: bold;
+}
+
+nav ul li a {
+	text-decoration: none;  
+}
+
+li:hover {
+	color: #B1663C;
+}
+#introduction {
+	display: flex;
+	align-items: center;
+}
+#introduction figure {
+	flex: 1
+}
+#introduction img {
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+#introduction article {
+	flex: 1
+}
+#introduction h2 {
+	margin-bottom: 1em;
+}
+
+#introduction p {
+	margin-bottom: 0.5em;
+}
+#portfolio h2 {
+	text-align: center;
+	margin-bottom: 1em;
+	margin-top: 120px;
+
+}
+
+#buttons button {
+	background-color: rgba(255, 254, 248, 1);
+	color: rgba(29, 97, 84, 1);
+	border-radius: 60px;
+	border-width: 1px;
+	border-color: #1D6154;
+	width: fit-content;
+	min-width: 80px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+#buttons button:hover {
+	background-color:#1D6154;
+	color:white;
+}
+
+#buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	}
+
+.gallery {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.gallery img {
+	width: 100%;
+
+}
+#contact {
+	width: 50%;
+margin: auto;
+}
+#contact > * {
+	text-align: center;
+
+}
+#contact h2{
+	margin-bottom: 20px;
+}
+#contact form {
+	text-align: left;
+	margin-top:30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#contact label {
+	margin: 2em 0 1em 0;
+}
+#contact textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+input[type="submit"]{
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin : 2em auto ;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px ;
+}
+
+footer nav ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em;
+}
+
+footer {
+	background-color: white;
+	height: 60px;
+	margin-top: 250px;
+}
+
+/* Page Login */
+
+.LogIn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-top: 200px;
+}
+
+.LogIn h2 {
+	margin-bottom: 30px;
+}
+
+.LogIn #LogInForm {
+	margin-top: 40px;
+}
+
+.LogInElementsconnect{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#LogInForm input {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+	margin-top: 10px;
+  	margin-bottom: 10px;
+}
+
+.LogInElementsinput {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 379px;
+	height: 51px;
+	border: 0px;
+	box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
+
+}
+
+.LogInElementsconnect {
+	font-family: syne ;
+	font-weight: 700;
+	font-size: 14px;
+	width: 179px;
+	height: 36px;
+	border-radius: 60px;
+	border: 0px;
+}
+
+#LogInForm label {
+	float: left;
+	display: flex;
+	align-items:normal;
+    justify-content:left;
+	font: Work sans;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.LogInElementsp {
+	text-decoration: underline;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
